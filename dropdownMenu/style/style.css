@@ -1,0 +1,137 @@
+/* general styles */
+@font-face {
+    font-family: 'vazir';
+    src: url('../font/');
+    src: url('../font/?#iefix') format('embedded-opentype'),
+    url('../font/vazir.woff') format('woff'),
+    url('../font/vazir.ttf') format('truetype'),
+    url('../font/vazir.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+body
+{
+    direction: rtl;
+    font-family: vazir;
+}
+*
+{
+    box-sizing: border-box;
+}
+.clearfix
+{
+    clear: both;
+}
+/* navigation menu */
+#navigation
+{
+    background-color: #313131;
+}
+/* right navigatin */
+#navigation .right
+{
+    float: right;
+}
+#navigation ul
+{
+    padding: 0;
+    margin: 0;
+}
+#navigation .right ul li
+{
+    display: inline-block;
+}
+#navigation .right ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 10px;
+    display: inline-block;
+}
+#navigation .right ul li a:hover
+{
+    background-color: black;
+}
+#navigation .right .fa-chevron-down
+{
+    font-size: 13px;
+    padding-right: 6px;
+    vertical-align: -3px;
+}
+#navigation .right .dropdown
+{
+    position: absolute;
+    /* background-color: blueviolet; */
+    width: 150px;
+    visibility: hidden;
+    transition: 0.3s;
+}
+#navigation .right .dropdown li
+{
+    display: block;
+}
+#navigation .right .dropdown a
+{
+    background-color: #313131;
+    width: 100%;
+}
+#navigation .right .hov:hover .dropdown
+{
+    visibility: visible;
+    transition: 0.3s;
+}
+
+/* left navigation */
+#navigation .left
+{
+    float: left;
+}
+#navigation .left .user
+{
+    position: relative;
+    top: 7px;
+    left: 10px;
+}
+#navigation .left .user .link
+{
+    background-color: blueviolet;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+}
+#navigation .left .user .link:hover
+{
+    background-color: rgb(91, 25, 153);
+}
+#navigation .left .fa-chevron-down
+{
+    padding-right: 6px;
+    font-size: 13px;
+    vertical-align: -4px;
+}
+#navigation .left .hove
+{
+    background-color: blueviolet;
+    position: absolute;
+    left: 0;
+    width: 120px;
+    visibility: hidden;
+}
+#navigation .left .hove a
+{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 7px;
+}
+#navigation .left .user:hover .hove
+{
+    visibility: visible;
+}
+#navigation .left .hove a:hover
+{
+    background-color: rgb(91, 25, 153);
+}
